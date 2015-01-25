@@ -34,7 +34,7 @@
  #masthead-wrap { display: table; width: 100%; max-width: 1140px; padding: 0 2em; height: 88px; margin: 0 auto; vertical-align: middle; box-sizing: border-box; }
  .wsite-logo img { max-height: 70px; }
  #masthead .sitename { display: table-cell; width: 70%; text-align: left; max-width: 60%; vertical-align: middle; }
- .wsite-logo a { font-size: 1.75em; font-weight: 700; color: black; }
+ .wsite-logo a { font-size: 1.75em; font-weight: 700; color: white; }
  #masthead #sitesearch { display: table-cell; width: 50%; text-align: right; vertical-align: middle; }
  .wsite-search { float: right; position: relative; display: block; height: 26px; }
  #wsite-header-search-form { position: relative; display: block; width: 26px; height: 26px; overflow: hidden; -webkit-transition: all 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) !important; -moz-transition: all 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) !important; -o-transition: all 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) !important; -ms-transition: all 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) !important; transition: all 100ms cubic-bezier(0.55, 0.085, 0.68, 0.53) !important; }
@@ -56,7 +56,7 @@
  .wsite-logo a {  font-size: 1.5em; }
  }
  #mobile, #navigation .sitename { display: none; }
- .postload #navigation.stuck { position: fixed; top: 0; left: 0; background: #000000; }
+ .postload #navigation.stuck { position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.6); }
  #nav { overflow: hidden; display: inline-block; max-width: 78%; margin: 0 1em 0 0; }
  #search { display: none; }
  #navmobile { max-height: 0; overflow: hidden; display: none; }
