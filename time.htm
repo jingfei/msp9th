@@ -20,6 +20,31 @@
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 <script src='http://cdn2.editmysite.com/js/site/main.js?buildTime=1234'></script>
 <script>_W.relinquish && _W.relinquish()</script>
+<script src="jquery-1.9.1.js"></script>
+<script src="masonry.pkgd.min.js"></script>
+	<script>
+jQuery(window).load(function(){
+	$(".item").each(function(){
+//		var H = $(this).height();
+//		var H = $(this).find("img").height();
+		$(this).height(120);
+	});
+  var container = document.querySelector('#container');
+  var msnry = new Masonry( container, {
+    columnWidth: 220
+  });
+});
+	</script>
+	<style>
+.item{
+	width:100px;
+	transform:rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	position: absolute;
+	top: -20px;
+}
+	</style>
 </head>
 <body class='short-header-page wsite-theme-dark wsite-page-35336300593549826126'>
 <div id="wrapper">
@@ -29,8 +54,6 @@
       <div id="masthead-wrap">
         <div class="sitename" style="margin:0 auto">
         	<span class='wsite-logo'>
-				<a href='./'><img src="images/msp.png" style="width:70px"/></a>
-				<a href='./' id="title">Microsoft Student Partners in Taiwan</a>
 			</span>
 			<div id="sitesearch"></div>
 		</div>
@@ -38,6 +61,7 @@
     </div>
 
     <div id="navigation">
+		<img src="images/msp.png" style="position:absolute;top:-40px;left:100px;z-index:20;height:140px;" />
      	<div id="search">
 			<a href="apps/search">
 		</a>
@@ -54,16 +78,16 @@
    	 	<div id="nav">
 			<ul class='wsite-menu-default'>
 				<li>
-					<a href="./">Home + 計畫說明</a>
+					<a href="./">Home</a>
 				</li>
 				<li id="active">
-					<a href="time.htm">時程說明 + 報名</a>
+					<a href="time.htm">實習介紹</a>
 				</li>
 				<li>
-					<a href="msp-9th.htm">MSP 9th + 工作說明</a>
+					<a href="msp-9th.htm">報名實習</a>
 				</li>
 				<li>
-					<a href="qa.htm">Q&A</a>
+					<a href="qa.htm">Q & A</a>
 				</li>
 			</ul>
 		</div>
@@ -76,32 +100,56 @@
   <div id="main">
     
     <div id="banner-wrap">
-	    <div class="wsite-background" style="filter: url(/files/theme/grayscale.svg#grayscale);">
+	    <div class="wsite-background" style="text-align:center">
+			<div style="text-decoration:underline;font-size:3.5em;font-weight:900;">MICROSOFT STUDENT PARTNERS</div>
+			<div id="p1" class="gates" style="font-size:1.5em;padding:50px 0;font-weight:700">
+				MSP是一個團隊，我們不只是一群一起工作的夥伴，<br/>
+更是一起互助成長的戰友。我們沒有固定的工作時間，你不需要擔心地區性的問題。<br/>
+因為有這些來自全國各地的夥伴加入，MSP才能像今天一樣強大。<br/>
+實習工作分成三個組別：技術開發組、公關企劃組、美術設計組。為期一年的實習期間，<br/>
+可依照個人興趣參與其他組別工作也可以享受專屬於MSP的微軟資源。想讓大學期間有與眾不同的經驗嗎？<br/>
+還是想與來自四面八方的高手互相切磋？ Microsoft Student Partners，是你的第一選擇。<br/>
+			</div>
 </div>
       <div id="banner">
+			<img src="images/banner.png" style="width:100%;"/>
         <div id="banner-content">
-          <h2 style="padding:30px">
-			計畫說明
-		</h2>
         </div>
   		</div>
     </div>
     
     <div id="content-wrapper">
   		<div id="content"><div id='wsite-content' class='wsite-elements wsite-not-footer'>
-			<div style="width:80%">
-				<span style="font-size:40px;">A. Microsoft Student Partners</span>
-				<p style="font-size:20px">微軟學生大使(簡稱MSP)是由美國微軟總部所創立，並於全球超過100國家成立微軟學生大使，集合了來自全球各地優秀及富創意的科技愛好者所組成的學生菁英組
-織。 </p>
+			<div style="width:80%;text-align:center;position:relative;top:-150px;z-index:12;">
+				<div style="font-size:40px;font-weight:700">O U R&nbsp;&nbsp; T E A M</div><br/>
+				<img src="images/triangle.png"/><br/><br/>
+				<div style="font-size:40px;border:5px solid #D5E42F;width:200px;margin:0 auto;color:#D5E42F;padding:5px">9th 技術組</div>
 			</div>
-			<div style="width:80%">
-				<span style="font-size:40px;">B. Microsoft Student Partners實習計畫</span>
-				<p style="font-size:20px">MSP是一個團隊，我們不只是一群一起工作的夥伴，更是一起互助成長的戰友。我們沒有固定的工作時間，你不需要擔心地區性的問題。因為有這些來自全國各地的夥伴加入，MSP才能像今天一樣強大。<br/>
-這次實習工作分成三個組別：技術開發組、公關企劃組、美術設計組。<br/>
-為期一年的實習期間，可依照個人興趣參與其他組別工作也可以享受專屬於MSP的微軟資源（什麼是MSDN？ MSP+？）。<br/>
-想讓大學期間有與眾不同的經驗嗎？還是想與來自四面八方的高手互相切磋？
-Microsoft Student Partners，是你的第一選擇。<br/>
-</p>
+			<div id="container" style="width:83%;text-align:center">
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src=""/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src=""/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src="images/square1.png"/></div>
+				<div class="item" style="margin-left:110px"><img src=""/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
+				<div class="item"><img src="images/square1.png"/></div>
 			</div>
 			
 </div>
