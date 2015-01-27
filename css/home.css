@@ -1,0 +1,28 @@
+#home{
+	position: relative;
+	top: 100px;
+	text-align: center;
+	cursor: default;
+	z-index: 15;
+	margin: 45px;
+}
+img.circle{
+	padding: 0 10px;
+	width: 12px;
+}
+#MTitle{
+	padding: 0px 3px;
+	border: 5px solid black;
+	font-size: 3.5em;
+	font-weight: 900;
+}
+#MTitle:hover{
+	color: #009DE6;
+	border: 5px solid #009DE6;
+	cursor: default;
+}
+.gates{
+	font-size:2em;
+	padding:70px 0;
+	font-weight:700;
+}

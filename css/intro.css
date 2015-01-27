@@ -1,0 +1,59 @@
+#intro{
+	text-align: center;
+	z-index: 20;
+	position: relative;
+	top: 300px;
+}
+
+#introText{
+	font-size: 1.7em;
+	font-weight: 600;
+}
+
+#introImg{
+	margin-top: 50px;
+}
+#introImg img{
+	margin: 0 30px;
+	width: 230px;
+}
+
+#introTitle{
+	background: white;
+	width: 810px;
+	height: 50px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#introTitle>div{
+	display: inline-block;
+	font-size: 35px;
+	font-weight: 900;
+	color: #009DE6;
+}
+
+#tr02{
+	position: relative;
+	left: -295px;  //美宣-295 企劃0 技術295
+}
+
+#introContent{
+	margin: 20px;
+	font-size: 1.5em;
+	font-weight: 500;
+	color: white;
+	height: 80px;
+}
+
+#introFilm{
+	font-size: 2em;
+	margin-top: 50px;
+	font-weight: 900;
+}
+#introFilm>div>span{
+	border: 5px solid white;
+	color: white;
+	padding: 2px 15px;
+}
+
