@@ -1,6 +1,5 @@
 $(document).ready( function() {
 	var navH=$("#main").offset().top+30;
-	console.log(navH);
 	$("#buttonH").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();

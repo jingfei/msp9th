@@ -1,3 +1,4 @@
+var Now=1;
 $(document).ready( function() {
 	$("#iI1").hover(function(){ShowIntro(1);});
 	$("#iI2").hover(function(){ShowIntro(2);});
@@ -46,6 +47,8 @@ $(document).ready( function() {
 function ShowIntro(id){
 	event.stopPropagation();
 	if(id===1){
+		if(Now==1) return;
+		Now=1;
 		$("#tr02").animate({"left":"-295px"},300);
 		$("#intro1").show("slow");
 		$("#intro2").hide();
@@ -92,6 +95,8 @@ function ShowIntro(id){
 		});
 	}
 	else if(id===2){
+		if(Now==2) return;
+		Now=2;
 		$("#tr02").animate({"left":"0"},300);
 		$("#intro2").slideDown("slow");
 		$("#intro1").hide();
@@ -138,6 +143,8 @@ function ShowIntro(id){
 		});
 	}
 	else if(id===3){
+		if(Now==3) return;
+		Now=3;
 		$("#tr02").animate({"left":"295px"},300);
 		$("#intro3").show("slide",{direction:"right"},"slow");
 		$("#intro2").hide();
