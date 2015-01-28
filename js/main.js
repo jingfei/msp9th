@@ -48,6 +48,13 @@ $(document).ready( function() {
 		var LECTURE=$("#lecture").offset().top;
 		var GROUP=$("#group").offset().top+$("#bg3").height()*0.1;
 		var QA=$("#qa").offset().top;
+		var Win=$(window).width();
+		if(t>NavTop && Win<1200){
+			$("#navigation").attr("id","mobile");
+		}
+		else{
+			$("#mobile").attr("id","navigation");
+		}
 		if(t+1>=QA){
 			$("#nav ul li").removeAttr("id");
 			$("#buttonQ").parent().attr("id","active");
@@ -72,10 +79,20 @@ $(document).ready( function() {
 			$("#nav ul li").removeAttr("id");
 			$("#buttonH").parent().attr("id","active");
 		}
-		if(t>=NavTop)
+		if(t>=NavTop){
 			$("#navigation").addClass("float-scroll");
-		else
+			$("#mobile").addClass("float-scroll");
+		}
+		else{
 			$("#navigation").attr("class", "");
+			$("#mobile").attr("class", "");
+		}
+	});
+	$("#mobileMenu").on("click",function(){
+		if($("#nav-ul").css('display')=='none')
+			$("#nav-ul").show();
+		else
+			$("#nav ul").hide();
 	});
 
 });
