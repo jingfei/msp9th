@@ -69,6 +69,10 @@ body{height:100%;}
 .background img{
 	width:100%;
 }
+#bg2{
+	position: relative;
+	top: 100px;
+}
 
 #footer{
 	text-align: center;

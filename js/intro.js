@@ -11,7 +11,7 @@ $(document).ready( function() {
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(75 * progress) + '<i>%</i>');
 		});
@@ -20,7 +20,7 @@ $(document).ready( function() {
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(80 * progress) + '<i>%</i>');
 		});
@@ -29,7 +29,7 @@ $(document).ready( function() {
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(65 * progress) + '<i>%</i>');
 		});
@@ -38,7 +38,7 @@ $(document).ready( function() {
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(85 * progress) + '<i>%</i>');
 		});
@@ -62,7 +62,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(75 * progress) + '<i>%</i>');
 		});
@@ -71,7 +71,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(80 * progress) + '<i>%</i>');
 		});
@@ -80,7 +80,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(65 * progress) + '<i>%</i>');
 		});
@@ -89,7 +89,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(85 * progress) + '<i>%</i>');
 		});
@@ -110,7 +110,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(77 * progress) + '<i>%</i>');
 		});
@@ -119,7 +119,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(99 * progress) + '<i>%</i>');
 		});
@@ -128,7 +128,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(88 * progress) + '<i>%</i>');
 		});
@@ -137,7 +137,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(75 * progress) + '<i>%</i>');
 		});
@@ -158,7 +158,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(100 * progress) + '<i>%</i>');
 		});
@@ -167,7 +167,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(70 * progress) + '<i>%</i>');
 		});
@@ -176,7 +176,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(90 * progress) + '<i>%</i>');
 		});
@@ -185,7 +185,7 @@ function ShowIntro(id){
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
-			fill: { color: '#FFEE00' },
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(95 * progress) + '<i>%</i>');
 		});
