@@ -1,71 +1,83 @@
 $(document).ready( function() {
-	$("#buttonH").click(function() {
-	    $('html, body').animate({ scrollTop: $("body").offset().top }, 2000);
-		$("#nav ul li").removeAttr("id");
-		$("#buttonH").parent().attr("id","active");
+	var navH=$("#main").offset().top+30;
+	console.log(navH);
+	$("#buttonH").on('click',function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	    $('html, body').animate({ scrollTop: 0 }, 1000);
+		return false;
 	});
-	$("#buttonI").click(function() {
-	    $('html, body').animate({ scrollTop: $("#intro").offset().top }, 2000);
-		$("#nav ul li").removeAttr("id");
-		$("#buttonI").parent().attr("id","active");
+	$("#buttonI").on('click',function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	    $('html, body').animate({ scrollTop: $("#intro").offset().top-navH }, 1000);
+		return false;
 	});
-	$("#buttonA").click(function() {
-	    $('html, body').animate({ scrollTop: $("#apply").offset().top }, 2000);
+	$("#buttonA").on('click',function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	    $('html, body').animate({ scrollTop: $("#apply").offset().top-navH }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonA").parent().attr("id","active");
 	});
-	$("#buttonL").click(function() {
-	    $('html, body').animate({ scrollTop: $("#lecture").offset().top }, 2000);
+	$("#buttonL").on('click',function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	    $('html, body').animate({ scrollTop: $("#lecture").offset().top }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonL").parent().attr("id","active");
 	});
-	$("#buttonG").click(function() {
-	    $('html, body').animate({ scrollTop: $("#group").offset().top }, 2000);
+	$("#buttonG").on('click',function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	    $('html, body').animate({ scrollTop: $("#group").offset().top+$("#bg3").height()*0.1 }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonG").parent().attr("id","active");
 	});
-	$("#buttonQ").click(function() {
-	    $('html, body').animate({ scrollTop: $("#qa").offset().top }, 2000);
+	$("#buttonQ").on('click',function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	    $('html, body').animate({ scrollTop: $("#qa").offset().top }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonQ").parent().attr("id","active");
 	});
-});
+	$(window).scroll( function(){
+		var t=document.documentElement.scrollTop || document.body.scrollTop;
+		var NavTop=30;
+		var INTRO=$("#intro").offset().top-navH;
+		var APPLY=$("#apply").offset().top-navH;
+		var LECTURE=$("#lecture").offset().top;
+		var GROUP=$("#group").offset().top+$("#bg3").height()*0.1;
+		var QA=$("#qa").offset().top;
+		if(t+1>=QA){
+			$("#nav ul li").removeAttr("id");
+			$("#buttonQ").parent().attr("id","active");
+		}
+		else if(t+1>=GROUP){
+			$("#nav ul li").removeAttr("id");
+			$("#buttonG").parent().attr("id","active");
+		}
+		else if(t+1>=LECTURE){
+			$("#nav ul li").removeAttr("id");
+			$("#buttonL").parent().attr("id","active");
+		}
+		else if(t+1>=APPLY){
+			$("#nav ul li").removeAttr("id");
+			$("#buttonA").parent().attr("id","active");
+		}
+		else if(t+1>=INTRO){
+			$("#nav ul li").removeAttr("id");
+			$("#buttonI").parent().attr("id","active");
+		}
+		else{
+			$("#nav ul li").removeAttr("id");
+			$("#buttonH").parent().attr("id","active");
+		}
+		if(t>=NavTop)
+			$("#navigation").addClass("float-scroll");
+		else
+			$("#navigation").attr("class", "");
+	});
 
-window.onscroll = function(){
-	var t=document.documentElement.scrollTop || document.body.scrollTop;
-	var NavTop=30;
-	var INTRO=$("#intro").offset().top;
-	var APPLY=$("#apply").offset().top;
-	var LECTURE=$("#lecture").offset().top;
-	var GROUP=$("#group").offset().top;
-	var QA=$("#qa").offset().top;
-	if(t>=QA){
-		$("#nav ul li").removeAttr("id");
-		$("#buttonQ").parent().attr("id","active");
-	}
-	else if(t>=GROUP){
-		$("#nav ul li").removeAttr("id");
-		$("#buttonG").parent().attr("id","active");
-	}
-	else if(t>=LECTURE){
-		$("#nav ul li").removeAttr("id");
-		$("#buttonL").parent().attr("id","active");
-	}
-	else if(t>=APPLY){
-		$("#nav ul li").removeAttr("id");
-		$("#buttonA").parent().attr("id","active");
-	}
-	else if(t>=INTRO){
-		$("#nav ul li").removeAttr("id");
-		$("#buttonI").parent().attr("id","active");
-	}
-	else if(t>=NavTop){
-		$("#navigation").addClass("float-scroll");
-		$("#nav ul li").removeAttr("id");
-		$("#buttonH").parent().attr("id","active");
-	}
-	else{
-		$("#navigation").attr("class", "");
-	}
-}
+});
 
