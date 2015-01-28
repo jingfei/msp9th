@@ -1,11 +1,11 @@
 var Now=1;
 $(document).ready( function() {
-	$("#iI1").hover(function(){ShowIntro(1);});
-	$("#iI2").hover(function(){ShowIntro(2);});
-	$("#iI3").hover(function(){ShowIntro(3);});
-	$("#iT1").hover(function(){ShowIntro(1);});
-	$("#iT2").hover(function(){ShowIntro(2);});
-	$("#iT3").hover(function(){ShowIntro(3);});
+	$("#iI1").hover(function(e){ShowIntro(1,e);});
+	$("#iI2").hover(function(e){ShowIntro(2,e);});
+	$("#iI3").hover(function(e){ShowIntro(3,e);});
+	$("#iT1").hover(function(e){ShowIntro(1,e);});
+	$("#iT2").hover(function(e){ShowIntro(2,e);});
+	$("#iT3").hover(function(e){ShowIntro(3,e);});
 		$('.first').circleProgress({
 			value: 0.75,
 			size: 150.0,
@@ -44,7 +44,7 @@ $(document).ready( function() {
 		});
 });
 
-function ShowIntro(id){
+function ShowIntro(id, event){
 	event.stopPropagation();
 	if(id===1){
 		if(Now==1) return;
