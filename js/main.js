@@ -77,10 +77,10 @@ $(document).ready( function() {
 			$("#buttonH").parent().attr("id","active");
 		}
 		if(t>=NavTop){
-			$("#navigation").addClass("float-scroll");
+			$("#navigation").attr("class", "float-scroll");
 		}
 		else{
-			$("#navigation").attr("class", "");
+			$("#navigation").attr("class", "no-scroll");
 		}
 	});
 	$("#mobileMenu").on("click",function(){
@@ -89,9 +89,9 @@ $(document).ready( function() {
 		else
 			$("#nav ul").hide();
 	});
-	console.log($(window).width());
+
 	if($(window).width()<1200){
-		$("#navigation").addClass("float-scroll");
+		$("#navigation").attr("class","float-scroll");
 		$("#navigation").attr("id","mobile");
 	}
 
