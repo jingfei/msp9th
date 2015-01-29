@@ -50,7 +50,7 @@ $(document).ready( function() {
 		var INTRO=$("#intro").offset().top-navH;
 		var APPLY=$("#apply").offset().top-navH;
 		var LECTURE=$("#lecture").offset().top;
-		var GROUP=$("#group").offset().top+$("#bg3").height()*0.1;
+		var GROUP=$("#group").offset().top;
 		var QA=$("#qa").offset().top;
 		if(t+1>=QA){
 			$("#nav ul li").removeAttr("id");

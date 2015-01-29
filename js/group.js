@@ -2,6 +2,7 @@ $(document).ready( function() {
 	$("#gI1").hover(function(){ShowGroup(1);});
 	$("#gI2").hover(function(){ShowGroup(2);});
 	$("#gI3").hover(function(){ShowGroup(3);});
+	$('.person').hoverdir();
 });
 
 function ShowGroup(id){

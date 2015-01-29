@@ -11,8 +11,10 @@
 	<link rel='stylesheet' type='text/css' href='css/lecture.css' />
 	<link rel='stylesheet' type='text/css' href='css/group.css' />
 	<link rel='stylesheet' type='text/css' href='css/qa.css' />
+	<link rel='stylesheet' type='text/css' href='css/photo.css' />
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery-hover-effect.js"></script>
 	<script src="js/circle-progress.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/home.js"></script>
@@ -194,7 +196,6 @@
 			<div id="aSchool">
 				<div id="aSchoolTitle"><span>報名校園講座</span></div>
 			</div>
-			<img src="img/table.png" style="width:80%"/>
 		</div>
 		<div id="group">
 			<img src="img/background_3.png" id="bg3" />
@@ -203,52 +204,228 @@
 				<img id="gI2" src="img/group_21.png" />
 				<img id="gI3" src="img/group_31.png" />
 			</div>
-			<div id="member">
-				<div id="gM1">
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-				</div>
-				<div id="gM2" style="display:none">
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-				</div>
-				<div id="gM3" style="display:none">
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-					<div class="person"></div>
-				</div>
+			<div id="member" class="image_grid portfolio_4col">
+				<ul id="gM1" class="portfolio_list da-thumbs">
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+				</ul>
+				<ul id="gM2" class="portfolio_list da-thumbs" style="display:none">
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+				</ul>
+				<ul id="gM3" class="portfolio_list da-thumbs" style="display:none">
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+					<li class="person">
+						<img src="img/head.jpg">
+						<article class="da-animate da-slideFromRight" style="display: block;">
+							<h3>嘿嘿嘿</h3>
+							<em>最強組</em>
+						</article>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div id="qa" style="height:1200px">
+<!--		<div id="qa" style="height:1200px">
 		</div>
+-->
 	</div>
 	<div id="footer">
 		© 2015 by Microsoft Student Partners in Taiwan 9th
