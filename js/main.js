@@ -93,6 +93,7 @@ $(document).ready( function() {
 	if($(window).width()<1200){
 		$("#navigation").attr("class","float-scroll");
 		$("#navigation").attr("id","mobile");
+		$("#nav-ul").append('<li><a href="https://www.facebook.com/MSPTaiwan" target="_blank">MSP Facebook</a></li>');
 	}
 
 });
