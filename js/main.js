@@ -4,13 +4,13 @@ $(document).ready( function() {
 		e.stopPropagation();
 		e.preventDefault();
 	    $('html, body').animate({ scrollTop: 0 }, 1000);
-		return false;
+		$("#mobile #nav ul").hide();
 	});
 	$("#buttonI").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
 	    $('html, body').animate({ scrollTop: $("#intro").offset().top-navH }, 1000);
-		return false;
+		$("#mobile #nav ul").hide();
 	});
 	$("#buttonA").on('click',function(e) {
 		e.stopPropagation();
@@ -18,6 +18,7 @@ $(document).ready( function() {
 	    $('html, body').animate({ scrollTop: $("#apply").offset().top-navH }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonA").parent().attr("id","active");
+		$("#mobile #nav ul").hide();
 	});
 	$("#buttonL").on('click',function(e) {
 		e.stopPropagation();
@@ -25,6 +26,7 @@ $(document).ready( function() {
 	    $('html, body').animate({ scrollTop: $("#lecture").offset().top }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonL").parent().attr("id","active");
+		$("#mobile #nav ul").hide();
 	});
 	$("#buttonG").on('click',function(e) {
 		e.stopPropagation();
@@ -32,6 +34,7 @@ $(document).ready( function() {
 	    $('html, body').animate({ scrollTop: $("#group").offset().top+$("#bg3").height()*0.1 }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonG").parent().attr("id","active");
+		$("#mobile #nav ul").hide();
 	});
 	$("#buttonQ").on('click',function(e) {
 		e.stopPropagation();
@@ -39,6 +42,7 @@ $(document).ready( function() {
 	    $('html, body').animate({ scrollTop: $("#qa").offset().top }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonQ").parent().attr("id","active");
+		$("#mobile #nav ul").hide();
 	});
 	$(window).scroll( function(){
 		var t=document.documentElement.scrollTop || document.body.scrollTop;
@@ -48,13 +52,6 @@ $(document).ready( function() {
 		var LECTURE=$("#lecture").offset().top;
 		var GROUP=$("#group").offset().top+$("#bg3").height()*0.1;
 		var QA=$("#qa").offset().top;
-		var Win=$(window).width();
-		if(t>NavTop && Win<1200){
-			$("#navigation").attr("id","mobile");
-		}
-		else{
-			$("#mobile").attr("id","navigation");
-		}
 		if(t+1>=QA){
 			$("#nav ul li").removeAttr("id");
 			$("#buttonQ").parent().attr("id","active");
@@ -80,20 +77,24 @@ $(document).ready( function() {
 			$("#buttonH").parent().attr("id","active");
 		}
 		if(t>=NavTop){
-			$("#navigation").addClass("float-scroll");
-			$("#mobile").addClass("float-scroll");
+			$("#navigation").attr("class", "float-scroll");
 		}
 		else{
-			$("#navigation").attr("class", "");
-			$("#mobile").attr("class", "");
+			$("#navigation").attr("class", "no-scroll");
 		}
 	});
 	$("#mobileMenu").on("click",function(){
 		if($("#nav-ul").css('display')=='none')
-			$("#nav-ul").show();
+			$("#nav-ul").show(500);
 		else
 			$("#nav ul").hide();
 	});
+
+	if($(window).width()<1200){
+		$("#navigation").attr("class","float-scroll");
+		$("#navigation").attr("id","mobile");
+		$("#nav-ul").append('<li><a href="https://www.facebook.com/MSPTaiwan" target="_blank">MSP Facebook</a></li>');
+	}
 
 });
 
