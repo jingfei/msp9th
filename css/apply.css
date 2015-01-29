@@ -1,5 +1,4 @@
 #apply{
-	text-align: center;
 	z-index: 20;
 	position: relative;
 	top: 300px;
@@ -13,3 +12,21 @@
 	padding: 2px 15px;
 }
 
+#aLittleTitle{
+	font-size: 1.3em;
+	font-weight: 700;
+	border: 5px solid #009DE6;
+	padding: 2px 5px;
+	display: inline-block;
+	margin-left: 110px;
+}
+
+#LittleContent{
+	font-size: 1.3em;
+	font-weight: 700;
+	width: 80%;
+	text-align: left;
+	margin-left: 120px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
