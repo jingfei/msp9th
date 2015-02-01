@@ -2,7 +2,7 @@
 	text-align: center;
 	z-index: 20;
 	position: relative;
-	top: 280px;
+	top: 25em;
 }
 
 #introText{
@@ -50,6 +50,7 @@
 	font-weight: 500;
 	color: white;
 	height: 80px;
+	text-shadow: 0px 0px 4px #009DE6;
 }
 
 #introSlider>div>div{

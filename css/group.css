@@ -1,7 +1,7 @@
 #group{
 	z-index: 20;
 	position: relative;
-	top: 250px;
+	top: 60em; //250px;
 }
 
 #bg3{
