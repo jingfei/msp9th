@@ -8,8 +8,13 @@
 	font-weight: 900;
 }
 #aBigTitle>span{
+	background: #EEEFEF;
+	padding: 20px;
+}
+#aBigTitle>span>span{
 	border: 5px solid #0A232E;
 	padding: 2px 15px;
+	background: #EEEFEF;
 }
 
 #aLittleTitle{
