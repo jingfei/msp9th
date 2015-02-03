@@ -1,7 +1,7 @@
 #apply{
 	z-index: 20;
 	position: relative;
-	top: 50em;//300px;
+	top: 35em;
 }
 #aBigTitle{
 	font-size: 2em;
@@ -36,3 +36,12 @@
 	margin-top: 15px;
 	margin-bottom: 20px;
 }
+
+#aContent{
+	background: rgba(238,239,239,0.8);
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 20px;
+	border-radius: 25px;
+}
+
