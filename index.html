@@ -20,8 +20,14 @@
 	<script src="js/home.js"></script>
 	<script src="js/intro.js"></script>
 	<script src="js/group.js"></script>
+    <script src="js/photo-click.js"></script>
 </head>
 <body>
+    <div id="mask">
+        <table style="background:rgba(0%,0%,0%,0.9);;position:fixed; top:0px;left:0px;z-index:99999" >
+            <tr><td></td></tr>
+        </table>
+    </div>
     <div id="navigation" class="no-scroll">
 		<img src="img/msp.png" id="mspStar"/>
 		<span id="mobileText">M S P</span>
@@ -52,7 +58,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="main">
+    <div id="main">
 		<div id="home">
 			<div><span id="MTitle">MICROSOFT STUDENT PARTNERS</span></div>
 			<div id="p0" class="gates">
@@ -430,6 +436,5 @@
 	<div id="footer">
 		© 2015 by Microsoft Student Partners in Taiwan 9th
 	</div>
-	
 </body>
 </html>
