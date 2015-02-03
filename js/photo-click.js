@@ -4,8 +4,8 @@ $(document).ready(function () {
         $(document).bind('scroll', function () {
             window.scrollTo(0, 0);
         });
-        var width = $(window).innerWidth();
-        var height = $(window).innerHeight();
+        var height = $("html").height();
+        var width = $("html").width();
         $("#mask table").css({"width" : width, "height" : height});
         $("#mask").show();
         
