@@ -50,7 +50,14 @@
 	font-weight: 500;
 	color: white;
 	height: 80px;
-	text-shadow: 0px 0px 6px #009DE6;
+	text-shadow: 2px 0 0 #009DE6, 
+				-2px 0 0 #009DE6, 
+				 0 2px 0 #009DE6, 
+				 0 -2px 0 #009DE6, 
+				 1px 1px #009DE6, 
+				-1px -1px 0 #009DE6, 
+				 1px -1px 0 #009DE6, 
+				-1px 1px 0 #009DE6;
 }
 
 #introSlider>div>div{
@@ -62,7 +69,14 @@
 	font-size: 1.2em;
 	font-weight: 700;
 	margin-bottom: 10px;
-	text-shadow: 0px 0px 6px #009DE6;
+	text-shadow: 1px 0 0 #009DE6, 
+				-1px 0 0 #009DE6, 
+				 0 1px 0 #009DE6, 
+				 0 -1px 0 #009DE6, 
+				 0.5px 0.5px #009DE6, 
+				-0.5px -0.5px 0 #009DE6, 
+				 0.5px -0.5px 0 #009DE6, 
+				-0.5px 0.5px 0 #009DE6;
 }
 .circle{
 	display: inline-block;
