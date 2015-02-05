@@ -24,6 +24,7 @@
 #Ques{
 	font-size: 1.2em;
 	font-weight: 700;
+	color:#009DE6;
 	margin-left: 150px;
 	margin-top:20px;
 }
@@ -31,9 +32,8 @@
 #Ans{
 	font-size: 1.2em;
 	font-weight: 700;
-	margin-left: 180px;
+	margin-left: 150px;
 	margin-top: 5px;
 	width: 80%;
 	
 }
-

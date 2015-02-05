@@ -1,5 +1,11 @@
 $(document).ready( function() {
 	var navH=$("#main").offset().top+30;
+	$("#buttonCircle").on('click',function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+	    $('html, body').animate({ scrollTop: 0 }, 1000);
+		$("#mobile #nav ul").hide();
+	});
 	$("#buttonH").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();

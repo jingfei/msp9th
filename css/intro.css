@@ -8,6 +8,14 @@
 #introText{
 	font-size: 1.7em;
 	font-weight: 600;
+	text-shadow: 2px 0 0 #EEEFEF, 
+				-2px 0 0 #EEEFEF, 
+				 0 2px 0 #EEEFEF, 
+				 0 -2px 0 #EEEFEF, 
+				 1px 1px #EEEFEF, 
+				-1px -1px 0 #EEEFEF, 
+				 1px -1px 0 #EEEFEF, 
+				-1px 1px 0 #EEEFEF;
 }
 
 #introBigTitle{

@@ -109,41 +109,31 @@ function ShowIntro(id, event){
 		$("#intro2").slideDown("slow");
 		$("#intro1").hide();
 		$("#intro3").hide();
-		$("#cT1").html("企");
-		$("#cT2").html("劃");
-		$("#cT3").html("組");
-		$("#cT4").html("啦");
+		$("#cT1").html("Project Management");
+		$("#cT2").html("Negotiation");
+		$("#cT3").html("Brand Packaging");
+		$("#cT4").html("Panning and Writing");
 		$('.first').circleProgress({
-			value: 0.77,
+			value: 0.85,
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
 			emptyFill: 'rgba(225,240,0,.2)',
 			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
-			$(this).find('.circleText').html(parseInt(77 * progress) + '<i>%</i>');
+			$(this).find('.circleText').html(parseInt(85 * progress) + '<i>%</i>');
 		});
 		$('.second').circleProgress({
-			value: 0.99,
+			value: 0.85,
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
 			emptyFill: 'rgba(225,240,0,.2)',
 			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
-			$(this).find('.circleText').html(parseInt(99 * progress) + '<i>%</i>');
+			$(this).find('.circleText').html(parseInt(85 * progress) + '<i>%</i>');
 		});
 		$('.third').circleProgress({
-			value: 0.88,
-			size: 150.0,
-			startAngle: -Math.PI/2,
-			thickness: 8,
-			emptyFill: 'rgba(225,240,0,.2)',
-			fill: { gradient: ['#FFEE00', '#D5E42F'] },
-		}).on('circle-animation-progress', function(event, progress) {
-			$(this).find('.circleText').html(parseInt(88 * progress) + '<i>%</i>');
-		});
-		$('.fourth').circleProgress({
 			value: 0.75,
 			size: 150.0,
 			startAngle: -Math.PI/2,
@@ -153,39 +143,7 @@ function ShowIntro(id, event){
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(75 * progress) + '<i>%</i>');
 		});
-	}
-	else if(id===3){
-		if(Now==3) return;
-		Now=3;
-		$("#tr02").animate({"left":"295px"},300);
-		$("#intro3").show("slide",{direction:"right"},"slow");
-		$("#intro2").hide();
-		$("#intro1").hide();
-		$("#cT1").html("技");
-		$("#cT2").html("術");
-		$("#cT3").html("組");
-		$("#cT4").html("啊");
-		$('.first').circleProgress({
-			value: 1,
-			size: 150.0,
-			startAngle: -Math.PI/2,
-			thickness: 8,
-			emptyFill: 'rgba(225,240,0,.2)',
-			fill: { gradient: ['#FFEE00', '#D5E42F'] },
-		}).on('circle-animation-progress', function(event, progress) {
-			$(this).find('.circleText').html(parseInt(100 * progress) + '<i>%</i>');
-		});
-		$('.second').circleProgress({
-			value: 0.7,
-			size: 150.0,
-			startAngle: -Math.PI/2,
-			thickness: 8,
-			emptyFill: 'rgba(225,240,0,.2)',
-			fill: { gradient: ['#FFEE00', '#D5E42F'] },
-		}).on('circle-animation-progress', function(event, progress) {
-			$(this).find('.circleText').html(parseInt(70 * progress) + '<i>%</i>');
-		});
-		$('.third').circleProgress({
+		$('.fourth').circleProgress({
 			value: 0.9,
 			size: 150.0,
 			startAngle: -Math.PI/2,
@@ -195,15 +153,57 @@ function ShowIntro(id, event){
 		}).on('circle-animation-progress', function(event, progress) {
 			$(this).find('.circleText').html(parseInt(90 * progress) + '<i>%</i>');
 		});
-		$('.fourth').circleProgress({
-			value: 0.95,
+	}
+	else if(id===3){
+		if(Now==3) return;
+		Now=3;
+		$("#tr02").animate({"left":"295px"},300);
+		$("#intro3").show("slide",{direction:"right"},"slow");
+		$("#intro2").hide();
+		$("#intro1").hide();
+		$("#cT1").html("Windows 8.1 development");
+		$("#cT2").html("Windows Phone development");
+		$("#cT3").html("Promotion");
+		$("#cT4").html("Single Rate");
+		$('.first').circleProgress({
+			value: 0.85,
 			size: 150.0,
 			startAngle: -Math.PI/2,
 			thickness: 8,
 			emptyFill: 'rgba(225,240,0,.2)',
 			fill: { gradient: ['#FFEE00', '#D5E42F'] },
 		}).on('circle-animation-progress', function(event, progress) {
-			$(this).find('.circleText').html(parseInt(95 * progress) + '<i>%</i>');
+			$(this).find('.circleText').html(parseInt(85 * progress) + '<i>%</i>');
+		});
+		$('.second').circleProgress({
+			value: 0.85,
+			size: 150.0,
+			startAngle: -Math.PI/2,
+			thickness: 8,
+			emptyFill: 'rgba(225,240,0,.2)',
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
+		}).on('circle-animation-progress', function(event, progress) {
+			$(this).find('.circleText').html(parseInt(85 * progress) + '<i>%</i>');
+		});
+		$('.third').circleProgress({
+			value: 0.7,
+			size: 150.0,
+			startAngle: -Math.PI/2,
+			thickness: 8,
+			emptyFill: 'rgba(225,240,0,.2)',
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
+		}).on('circle-animation-progress', function(event, progress) {
+			$(this).find('.circleText').html(parseInt(70 * progress) + '<i>%</i>');
+		});
+		$('.fourth').circleProgress({
+			value: 0.9,
+			size: 150.0,
+			startAngle: -Math.PI/2,
+			thickness: 8,
+			emptyFill: 'rgba(225,240,0,.2)',
+			fill: { gradient: ['#FFEE00', '#D5E42F'] },
+		}).on('circle-animation-progress', function(event, progress) {
+			$(this).find('.circleText').html(parseInt(90 * progress) + '<i>%</i>');
 		});
 	}
 }

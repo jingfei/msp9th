@@ -8,11 +8,14 @@
 	width: 100%;
 	position: relative;
 	top: 100px;
+	z-index: -1;
 }
 
 #gImg>img{
 	width: 150px;
 	margin: 0 10px;
+	cursor: pointer;
+	z-index: 30;
 }
 
 #member{
@@ -25,7 +28,7 @@
 	height: 250px;
 	background: gray;
 	margin: 2px;
-	display: inline-block;
+	display: none;
 	cursor: pointer;
 }
 
@@ -41,10 +44,12 @@
 #gM2{
 	margin: 0 auto;
 	height: 875px;
+	display: none;
 }
 
 #gM3{
 	margin: 0 auto;
 	height: 1100px;
+	display: none;
 }
 
