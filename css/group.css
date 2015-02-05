@@ -29,6 +29,7 @@
 	background: gray;
 	margin: 2px;
 	display: none;
+	cursor: pointer;
 }
 
 .person>img{
@@ -43,10 +44,12 @@
 #gM2{
 	margin: 0 auto;
 	height: 875px;
+	display: none;
 }
 
 #gM3{
 	margin: 0 auto;
 	height: 1100px;
+	display: none;
 }
 
