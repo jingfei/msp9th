@@ -4,11 +4,19 @@
 	top: 45em;
 }
 
-#bg3{
-	width: 100%;
-	position: relative;
-	top: 100px;
-	z-index: -1;
+#gTitle{
+	margin: 20px 0;
+	padding: 10% 5% 13% 5%; 
+	font-size: 1.6em;
+	color: white;
+	text-align: center;
+	background: rgba(10,36,47,0.9);
+}
+
+#gText{
+	text-align: center;
+	font-size: 3em;
+	font-weight: 900;
 }
 
 #gImg>img{

@@ -37,7 +37,7 @@ $(document).ready( function() {
 	$("#buttonG").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
-	    $('html, body').animate({ scrollTop: $("#group").offset().top+$("#bg3").height()*0.1 }, 1000);
+	    $('html, body').animate({ scrollTop: $("#group").offset().top }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonG").parent().attr("id","active");
 		$("#mobile #nav ul").hide();
