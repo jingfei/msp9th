@@ -6,7 +6,7 @@
 }
 
 #introText{
-	font-size: 1.7em;
+	font-size: 1.5em;
 	font-weight: 600;
 	text-shadow: 2px 0 0 #EEEFEF, 
 				-2px 0 0 #EEEFEF, 
@@ -54,7 +54,7 @@
 }
 
 #introContent{
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 500;
 	color: white;
 	height: 80px;

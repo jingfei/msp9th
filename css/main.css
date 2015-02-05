@@ -7,9 +7,25 @@ html,body{
 	margin: 0;
 	cursor: default;
 }
-body{height:100%;}
+body{
+	height:100%;
+}
+body>div:not(#loader){
+	display: none;
+}
 a{color: #009DE6; text-decoration: none;}
 a:hover{color:#D5E42F;}
+
+#loader{
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+}
 
 .float-scroll{
 	position: fixed;
@@ -161,7 +177,7 @@ a:hover{color:#D5E42F;}
 
 #footer{
 	position: relative;
-	top: 50em;
+	top: 40em;
 	text-align: center;
 	margin: 50px;
 	font-size: 1.2em;

@@ -19,10 +19,13 @@
 	background: #EEEFEF;
 }
 #aBigTitle #resume{
-	padding:5px 10px;
+	height: 50px;
+}
+#aBigTitle #resume>span{
+	padding:10px 20px;
 	background:#0A232E;
-	color:white;
-	font-size:1.2em;
+	border-radius: 20px;
+	font-size: 0.8em;
 }
 #aBigTitle #resume a{
 	color: white;
@@ -41,8 +44,8 @@
 }
 
 #LittleContent{
-	font-size: 1.3em;
-	font-weight: 700;
+	font-size: 1.2em;
+	font-weight: 500;
 	width: 80%;
 	text-align: left;
 	margin-left: 120px;
