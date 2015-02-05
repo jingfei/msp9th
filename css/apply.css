@@ -6,6 +6,7 @@
 #aBigTitle{
 	font-size: 2em;
 	font-weight: 900;
+	text-align: center;
 }
 #aBigTitle>span{
 	background: rgba(238,239,239,0.8);
