@@ -8,15 +8,27 @@
 	font-weight: 900;
 	text-align: center;
 }
-#aBigTitle>span{
+#aBigTitle #aTitle{
 	background: rgba(238,239,239,0.8);
 	padding: 20px;
 	border-radius: 10px;
 }
-#aBigTitle>span>span{
+#aBigTitle #aTitle span{
 	border: 5px solid #0A232E;
 	padding: 2px 15px;
 	background: #EEEFEF;
+}
+#aBigTitle #resume{
+	padding:5px 10px;
+	background:#0A232E;
+	color:white;
+	font-size:1.2em;
+}
+#aBigTitle #resume a{
+	color: white;
+}
+#aBigTitle #resume a:hover{
+	color: #D5E42F;
 }
 
 #aLittleTitle{
