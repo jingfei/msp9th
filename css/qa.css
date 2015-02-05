@@ -4,3 +4,36 @@
 	top: 48em;
 }
 
+#QATitle>span{
+	font-size: 2em;
+	font-weight: 800;
+	text-align:center;
+	border: 5px solid #0A232E;
+	padding: 2px 15px;
+	background: #EEEFEF;
+}
+
+#Q_style{
+	font-size: 1.5em;
+	font-weight: 800;
+	text-decoration:underline;
+	margin-left: 110px;
+	margin-top:50px;
+}
+
+#Ques{
+	font-size: 1.2em;
+	font-weight: 700;
+	color:#009DE6;
+	margin-left: 150px;
+	margin-top:20px;
+}
+
+#Ans{
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-left: 150px;
+	margin-top: 5px;
+	width: 80%;
+	
+}
