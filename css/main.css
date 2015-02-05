@@ -8,6 +8,8 @@ html,body{
 	cursor: default;
 }
 body{height:100%;}
+a{color: #009DE6; text-decoration: none;}
+a:hover{color:#D5E42F;}
 
 .float-scroll{
 	position: fixed;
@@ -154,6 +156,7 @@ body{height:100%;}
 
 #footer{
 	position: relative;
+	top: 50em;
 	text-align: center;
 	margin: 50px;
 	font-size: 1.2em;

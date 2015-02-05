@@ -66,7 +66,7 @@ font-size: 2.5em;
 margin-bottom:10px;
 color:#fff;
 display:block;
-font-size:2em;
+font-size: 1.8em;
 }
  
 .da-thumbs li  article span{
@@ -85,6 +85,5 @@ padding-top:70px !important;
     list-style:none;
     overflow:hidden;
     margin-bottom:23px;
-    margin-right:23px;
     text-align:center;
 }
