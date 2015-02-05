@@ -1,7 +1,7 @@
 /* Portolio Hover */
 .da-thumbs li ,
 .da-thumbs li  img {
-    display: block;
+ //   display: block;
     position: relative;
 }
 .da-thumbs li  {
@@ -79,7 +79,7 @@ padding-top:70px !important;
  
 /* Image Grid */
 .image_grid li{
-	display:inline-block;
+//	display:inline-block;
     line-height: 17px;
     color: #686f74;
     list-style:none;
