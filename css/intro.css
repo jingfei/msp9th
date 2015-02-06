@@ -6,8 +6,8 @@
 }
 
 #introText{
-	font-size: 1.5em;
-	font-weight: 600;
+	font-size: 1.3em;
+	font-weight: 500;
 	text-shadow: 2px 0 0 #EEEFEF, 
 				-2px 0 0 #EEEFEF, 
 				 0 2px 0 #EEEFEF, 
@@ -30,27 +30,27 @@
 }
 #introImg img{
 	margin: 0 50px;
-	width: 200px;
+	width: 150px;
 }
 
 #introTitle{
 	background: white;
-	width: 810px;
-	height: 50px;
+	width: 650px;
+	height: 30px;
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
 #introTitle>div{
 	display: inline-block;
-	font-size: 35px;
+	font-size: 23px;
 	font-weight: 900;
 	color: #009DE6;
 }
 
 #tr02{
 	position: relative;
-	left: -295px;  //美宣-295 企劃0 技術295
+	left: -250px;  //美宣-295 企劃0 技術295
 }
 
 #introContent{

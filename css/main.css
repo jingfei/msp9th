@@ -20,7 +20,7 @@ a:hover{color:#D5E42F;}
 	height: 100%;
 	width: 100%;
 	z-index: 999;
-	background: rgba(0,0,0,0.9);
+	background: rgba(255,255,255,0.9);
 	position: fixed;
 	margin: 0 auto;
 	text-align: center;
@@ -167,7 +167,7 @@ a:hover{color:#D5E42F;}
 }
 #bg2{
 	position: relative;
-	top: 100px;
+	top: 50px;
 }
 #bg3{
 	position: relative;

@@ -1,5 +1,5 @@
+var navH;
 $(document).ready( function() {
-	var navH=$("#main").offset().top+30;
 	$("#buttonCircle").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
@@ -107,6 +107,7 @@ $(document).ready( function() {
 $(window).load(function(){
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader)").fadeIn(2000);
+		navH=$("#main").offset().top+30;
 	});
 });
 
