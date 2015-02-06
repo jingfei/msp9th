@@ -7,18 +7,23 @@
 
 #aSchool{
 	margin: 100px 0;
-	padding: 50px;
+	padding: 110px;
 	background: #009DE6;
 	height: 500px;
 	color: white;
 }
 #aSchoolTitle{
 	font-size: 2em;
-	margin-top: 50px;
+	margin: 60px 0;
 	font-weight: 900;
 }
 #aSchoolTitle>span{
 	border: 5px solid white;
 	padding: 2px 15px;
+}
+
+#aSchoolContent{
+	margin: 40px;
+	font-size: 1.3em;
 }
 

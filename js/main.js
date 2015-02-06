@@ -29,7 +29,7 @@ $(document).ready( function() {
 	$("#buttonL").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
-	    $('html, body').animate({ scrollTop: $("#lecture").offset().top }, 1000);
+	    $('html, body').animate({ scrollTop: $("#lecture").offset().top}, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonL").parent().attr("id","active");
 		$("#mobile #nav ul").hide();

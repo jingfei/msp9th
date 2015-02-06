@@ -53,7 +53,7 @@ function ShowIntro(id, event){
 	if(id===1){
 		if(Now==1) return;
 		Now=1;
-		$("#tr02").animate({"left":"-295px"},300);
+		$("#tr02").animate({"left":"-253px"},300);
 		$("#intro1").show("slow");
 		$("#intro2").hide();
 		$("#intro3").hide();
@@ -157,7 +157,7 @@ function ShowIntro(id, event){
 	else if(id===3){
 		if(Now==3) return;
 		Now=3;
-		$("#tr02").animate({"left":"295px"},300);
+		$("#tr02").animate({"left":"253px"},300);
 		$("#intro3").show("slide",{direction:"right"},"slow");
 		$("#intro2").hide();
 		$("#intro1").hide();
