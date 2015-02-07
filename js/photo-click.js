@@ -6,7 +6,8 @@ $(document).ready(function () {
         });
         var height = $("html").height();
         var width = $("html").width();
-        $("#mask table").css({"width" : width, "height" : height});
+        //$("#mask table").css("background", "rgba(0%,0%,0%,0.9)");
+        $("#mask").css({"width" : width, "height" : height});
         $("#mask").show();
         
     });
