@@ -6,26 +6,37 @@
 }
 
 .Q_style{
-	font-size: 1.5em;
-	font-weight: 800;
-	text-decoration:underline;
+	font-size: 1.3em;
+	font-weight: 700;
+	padding: 2px 5px;
+	display: inline-block;
 	margin-left: 110px;
-	margin-top:50px;
+	background: #009ED6;
+	color: #fff;
+	border-radius: 5px;
 }
 
 .Ques{
 	font-size: 1.3em;
 	font-weight: 500;
-	color:#009DE6;
 	margin-left: 150px;
 	margin-top:20px;
+	font-weight: bold;
 }
 
 .Ans{
 	font-size: 1.2em;
 	font-weight: 500;
+	font-weight: bold;
+	width: 80%;
+	color:#009DE6;
 	margin-left: 150px;
 	margin-top: 5px;
-	width: 80%;
+	border-radius:20px;
+	background:rgba(255, 255, 255, 0.9);
+	padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
 	
 }
