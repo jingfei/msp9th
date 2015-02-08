@@ -179,8 +179,11 @@ a:hover{color:#D5E42F;}
 	position: relative;
 	top: 40em;
 	text-align: center;
-	margin: 50px;
 	font-size: 1.2em;
+	color: #fff;
 	font-weight: 700;
+	background: #009DE6;
+	padding: 80px 0 100px 0;
+	width: 100%;
 }
 
