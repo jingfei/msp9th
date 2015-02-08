@@ -6,17 +6,13 @@
 #gTitle{
 	margin: 10px 0;
 	padding: 8%; 
-	font-size: 1.3em;
 	color: white;
 	text-align: center;
 	background: rgba(10,36,47,0.9);
 }
 
-#gText{
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: 500;
-	margin-bottom: 30px;
+#gTitleContent{
+	font-size: 1.3em;
 }
 
 #gImg>img{

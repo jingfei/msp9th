@@ -3,7 +3,7 @@
 	position: relative;
 }
 #aBigTitle{
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 900;
 	text-align: center;
 }
@@ -11,10 +11,15 @@
 	padding: 20px;
 	border-radius: 10px;
 }
-#aBigTitle #aTitle span{
-	border: 5px solid #0A232E;
-	padding: 2px 15px;
-	background: #EEEFEF;
+#aBigTitle #aTitle>span{
+	padding: 5px 5px;
+	border: 4px solid rgba(10,35,46,0.9);
+}
+#aBigTitle #aTitle>span>span{
+//	border: 4px solid transparent;
+	padding: 0 15px;
+	background: rgba(10,35,46,0.9);
+	color: #EEEFEF;
 }
 #aBigTitle #resume{
 	height: 50px;
@@ -33,16 +38,18 @@
 	color: #D5E42F;
 }
 
-#aLittleTitle{
+.aLittleTitle{
 	font-size: 1.3em;
 	font-weight: 700;
-	border: 5px solid #009DE6;
 	padding: 2px 5px;
 	display: inline-block;
 	margin-left: 110px;
+	background: #009ED6;
+	color: #fff;
+	border-radius: 5px;
 }
 
-#LittleContent{
+.LittleContent{
 	font-size: 1.2em;
 	font-weight: 500;
 	width: 80%;
@@ -50,13 +57,6 @@
 	margin-left: 120px;
 	margin-top: 15px;
 	margin-bottom: 20px;
-}
-
-#aContent{
-	width: 85%;
-	margin: 0 auto;
-	padding-top: 20px;
-	border-radius: 25px;
 	text-shadow: 2px 0 0 #EEEFEF, 
 				-2px 0 0 #EEEFEF, 
 				 0 2px 0 #EEEFEF, 
@@ -65,5 +65,12 @@
 				-1px -1px 0 #EEEFEF, 
 				 1px -1px 0 #EEEFEF, 
 				-1px 1px 0 #EEEFEF;
+}
+
+#aContent{
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 20px;
+	border-radius: 25px;
 }
 
