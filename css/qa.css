@@ -17,18 +17,13 @@
 }
 
 .Ques{
-	font-size: 1.3em;
-	font-weight: 550;
-	margin-left: 150px;
-	margin-top:20px;
+	cursor: pointer;
 }
 
 .Ans{
-	font-size: 1.2em;
-	font-weight: 550;
-	width: 80%;
+	width: 85%;
 	color:#009DE6;
-	margin-left: 150px;
+	margin-left: 5%;
 	margin-top: 5px;
 	border-radius: 5px;
 	background:rgba(255, 255, 255, 0.9);
@@ -37,4 +32,17 @@
     padding-bottom: 5px;
     padding-left: 10px;
 	
+}
+
+#qaContent{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.accordionPart{
+	margin-left: 120px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	padding: 0;
 }
