@@ -6,8 +6,8 @@
 }
 
 .Q_style{
-	font-size: 1.3em;
-	font-weight: 700;
+	font-size: 1.7em;
+	font-weight: 550;
 	padding: 2px 5px;
 	display: inline-block;
 	margin-left: 110px;
@@ -18,21 +18,19 @@
 
 .Ques{
 	font-size: 1.3em;
-	font-weight: 500;
+	font-weight: 550;
 	margin-left: 150px;
 	margin-top:20px;
-	font-weight: bold;
 }
 
 .Ans{
 	font-size: 1.2em;
-	font-weight: 500;
-	font-weight: bold;
+	font-weight: 550;
 	width: 80%;
 	color:#009DE6;
 	margin-left: 150px;
 	margin-top: 5px;
-	border-radius:20px;
+	border-radius: 5px;
 	background:rgba(255, 255, 255, 0.9);
 	padding-top: 5px;
     padding-right: 10px;
