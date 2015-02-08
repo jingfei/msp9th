@@ -37,7 +37,7 @@ $(document).ready( function() {
 	$("#buttonG").on('click',function(e) {
 		e.stopPropagation();
 		e.preventDefault();
-	    $('html, body').animate({ scrollTop: $("#group").offset().top }, 1000);
+	    $('html, body').animate({ scrollTop: $("#group").offset().top-navH }, 1000);
 		$("#nav ul li").removeAttr("id");
 		$("#buttonG").parent().attr("id","active");
 		$("#mobile #nav ul").hide();
@@ -56,7 +56,7 @@ $(document).ready( function() {
 		var INTRO=$("#intro").offset().top-navH;
 		var APPLY=$("#apply").offset().top-navH;
 		var LECTURE=$("#lecture").offset().top-navH;
-		var GROUP=$("#group").offset().top;
+		var GROUP=$("#group").offset().top-navH;
 		var QA=$("#qa").offset().top-navH;
 		if(t+1>=QA){
 			$("#nav ul li").removeAttr("id");

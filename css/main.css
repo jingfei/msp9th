@@ -173,9 +173,10 @@ a:hover{color:#D5E42F;}
 	width:100%;
 }
 #bg3{
-	position: relative;
+	position: absolute;
 	width: 100%;
-	top: -10em;
+	bottom: -100px;
+	z-index: -1;
 }
 
 #footer{
