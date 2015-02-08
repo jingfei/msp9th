@@ -2,7 +2,7 @@
 	text-align: center;
 	z-index: 20;
 	position: relative;
-	top: 25em;
+	top: -5em;
 }
 
 #introText{
@@ -101,7 +101,7 @@
 
 #introFilm{
 	font-size: 2em;
-	margin-top: 150px;
+	margin-top: 100px;
 	font-weight: 900;
 }
 #introFilm>div>span{

@@ -1,7 +1,6 @@
 #apply{
 	z-index: 20;
 	position: relative;
-	top: 35em;
 }
 #aBigTitle{
 	font-size: 2em;
@@ -9,7 +8,6 @@
 	text-align: center;
 }
 #aBigTitle #aTitle{
-	background: rgba(238,239,239,0.8);
 	padding: 20px;
 	border-radius: 10px;
 }
@@ -55,10 +53,17 @@
 }
 
 #aContent{
-	background: rgba(238,239,239,0.8);
 	width: 85%;
 	margin: 0 auto;
 	padding-top: 20px;
 	border-radius: 25px;
+	text-shadow: 2px 0 0 #EEEFEF, 
+				-2px 0 0 #EEEFEF, 
+				 0 2px 0 #EEEFEF, 
+				 0 -2px 0 #EEEFEF, 
+				 1px 1px #EEEFEF, 
+				-1px -1px 0 #EEEFEF, 
+				 1px -1px 0 #EEEFEF, 
+				-1px 1px 0 #EEEFEF;
 }
 

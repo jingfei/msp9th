@@ -1,7 +1,8 @@
 #qa{
 	z-index: 20;
 	position: relative;
-	top: 45em;
+	margin: 100px 0;
+	top: -10em;
 }
 
 #QATitle>span{

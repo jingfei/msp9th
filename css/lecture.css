@@ -2,12 +2,11 @@
 	text-align: center;
 	z-index: 20;
 	position: relative;
-	top: 35em;
 }
 
 #aSchool{
 	margin: 100px 0;
-	padding: 110px;
+	padding: 50px;
 	background: #009DE6;
 	height: 500px;
 	color: white;
@@ -25,6 +24,7 @@
 #aSchoolContent{
 	margin: 40px;
 	font-size: 1.3em;
+	color: #0A232E;
 }
 
 #lContent{
