@@ -1,16 +1,8 @@
 #qa{
 	z-index: 20;
 	position: relative;
-	top: 45em;
-}
-
-#QATitle>span{
-	font-size: 2em;
-	font-weight: 800;
-	text-align:center;
-	border: 5px solid #0A232E;
-	padding: 2px 15px;
-	background: #EEEFEF;
+	margin: 100px 0;
+	top: -10em;
 }
 
 .Q_style{

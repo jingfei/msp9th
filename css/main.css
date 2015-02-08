@@ -156,28 +156,31 @@ a:hover{color:#D5E42F;}
   	text-indent: 25px;
 }
 
-.background{
+.subTitle1>span{
+	padding: 0px 3px;
+	border: 3px solid;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+#bg2{
 	position: absolute;
 	min-width: 1280px;
 	width: 100%;
 	z-index: 0;
 }
-.background img{
-	width:100%;
-}
-#bg2{
+#bg1{
 	position: relative;
-	top: 50px;
+	width:100%;
 }
 #bg3{
 	position: relative;
-	top: 38em;
 	width: 100%;
+	top: -10em;
 }
 
 #footer{
 	position: relative;
-	top: 40em;
 	text-align: center;
 	font-size: 1.2em;
 	color: #fff;

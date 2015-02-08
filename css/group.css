@@ -1,28 +1,23 @@
 #group{
 	z-index: 20;
 	position: relative;
-	top: 45em;
 }
 
 #gTitle{
-	margin: 20px 0;
-	padding: 10% 5% 13% 5%; 
-	font-size: 1.5em;
+	margin: 10px 0;
+	padding: 8%; 
 	color: white;
 	text-align: center;
 	background: rgba(10,36,47,0.9);
 }
 
-#gText{
-	text-align: center;
-	font-size: 1.2em;
-	font-weight: 900;
-	margin-bottom: 50px;
+#gTitleContent{
+	font-size: 1.3em;
 }
 
 #gImg>img{
 	width: 150px;
-	margin: 0 10px;
+	margin: 50px 10px 0 10px;
 	cursor: pointer;
 	z-index: 30;
 }

@@ -2,12 +2,11 @@
 	text-align: center;
 	z-index: 20;
 	position: relative;
-	top: 35em;
+	margin: 100px 0;
 }
 
 #aSchool{
-	margin: 100px 0;
-	padding: 110px;
+	padding: 50px;
 	background: #009DE6;
 	height: 500px;
 	color: white;
@@ -17,17 +16,15 @@
 	margin: 60px 0;
 	font-weight: 900;
 }
-#aSchoolTitle>span{
-	border: 5px solid white;
-	padding: 2px 15px;
-}
 
 #aSchoolContent{
 	margin: 40px;
 	font-size: 1.3em;
+	color: #0A232E;
 }
 
 #lContent{
+	margin: 50px;
 	font-size: 1.5em;
 }
 
