@@ -20,7 +20,6 @@ a:hover{color:#D5E42F;}
 	height: 100%;
 	width: 100%;
 	z-index: 999;
-	background: rgba(255,255,255,0.9);
 	position: fixed;
 	margin: 0 auto;
 	text-align: center;
