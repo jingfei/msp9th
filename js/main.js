@@ -106,7 +106,7 @@ $(document).ready( function() {
 
 $(window).load(function(){
 	$("#loader").slideUp("slow",function(){
-		$("body>div:not(#loader)").fadeIn(2000);
+		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
 		navH=$("#main").offset().top+30;
 	});
 });
