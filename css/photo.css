@@ -81,11 +81,9 @@ padding-top:70px !important;
  
 /* Image Grid */
 .image_grid li{
-//	display:inline-block;
     line-height: 5px;
     color: #686f74;
     list-style:none;
     overflow:hidden;
-    margin-bottom:23px;
     text-align:center;
 }

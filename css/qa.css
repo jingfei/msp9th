@@ -1,39 +1,47 @@
 #qa{
 	z-index: 20;
 	position: relative;
-	top: 45em;
-}
-
-#QATitle>span{
-	font-size: 2em;
-	font-weight: 800;
-	text-align:center;
-	border: 5px solid #0A232E;
-	padding: 2px 15px;
-	background: #EEEFEF;
+	margin: 150px 50px;
 }
 
 .Q_style{
-	font-size: 1.5em;
-	font-weight: 800;
-	text-decoration:underline;
+	font-size: 1.7em;
+	font-weight: 550;
+	padding: 2px 5px;
+	display: inline-block;
 	margin-left: 110px;
-	margin-top:50px;
+	background: #009ED6;
+	color: #fff;
+	border-radius: 5px;
 }
 
 .Ques{
-	font-size: 1.3em;
-	font-weight: 500;
-	color:#009DE6;
-	margin-left: 150px;
-	margin-top:20px;
+	cursor: pointer;
 }
 
 .Ans{
-	font-size: 1.2em;
-	font-weight: 500;
-	margin-left: 150px;
+	width: 85%;
+	color:#009DE6;
+	margin-left: 5%;
 	margin-top: 5px;
-	width: 80%;
+	border-radius: 5px;
+	background:rgba(255, 255, 255, 0.9);
+	padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
 	
+}
+
+#qaContent{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.accordionPart{
+	margin-left: 120px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	padding: 0;
 }

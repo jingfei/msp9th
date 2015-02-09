@@ -20,7 +20,6 @@ a:hover{color:#D5E42F;}
 	height: 100%;
 	width: 100%;
 	z-index: 999;
-	background: rgba(255,255,255,0.9);
 	position: fixed;
 	margin: 0 auto;
 	text-align: center;
@@ -156,32 +155,39 @@ a:hover{color:#D5E42F;}
   	text-indent: 25px;
 }
 
-.background{
+.subTitle1>span{
+	padding: 0px 3px;
+	border: 3px solid;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+#bg2{
 	position: absolute;
 	min-width: 1280px;
 	width: 100%;
 	z-index: 0;
 }
-.background img{
+#bg1{
+	position: relative;
 	width:100%;
 }
-#bg2{
-	position: relative;
-	top: 50px;
-}
 #bg3{
-	position: relative;
-	top: 38em;
+	position: absolute;
 	width: 100%;
+	bottom: -100px;
+	z-index: -1;
 }
 
 #footer{
 	position: relative;
-	top: 40em;
 	text-align: center;
-	margin: 50px;
 	font-size: 1.2em;
+	color: #fff;
 	font-weight: 700;
+	background: #009DE6;
+	padding: 80px 0 100px 0;
+	width: 100%;
 }
 
 #mask{
