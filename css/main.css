@@ -200,26 +200,14 @@ a:hover{color:#D5E42F;}
     width:100%;
 	margin: 0 auto;
 }
-#whitemask{
-    z-index: 101;
-    display: none;
-    background-color: #eeefef;
-    opacity: 0.8;
-    height:100%;
-    width: 950px;
-    //top:0;
-    //left: 50%;
-    //margin-left: -475px;
-    margin: 0px auto;
-}
 #bluemask{
 	position: absolute;
     z-index: 102;
     display: none;
     background-color: #009de6;
     opacity: 0.8;
-    width: 950px;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     margin: 30px auto;
 }
 #mspdetail{
