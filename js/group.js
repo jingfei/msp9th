@@ -1,5 +1,6 @@
+var id=1;
 $(document).ready( function() {
-	var tmp,id=1;
+	var tmp;
 	$("#gI1").hover(
 		function(){
 			$("#gI1").attr("src","img/group_10.png");
@@ -32,6 +33,8 @@ $(document).ready( function() {
 	$('.person').hoverdir();
 	$("#gM1").find('.person').css("display","inline-block");
 });
+
+function getGroup(){return id;}
 
 function ShowGroup(id){
 	if(id===1){
