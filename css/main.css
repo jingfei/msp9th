@@ -88,6 +88,14 @@ a:hover{color:#D5E42F;}
 	transition: all 100ms linear;
 }
 #nav ul li#active a, #nav ul li a:hover{ color: #D5E42F; }
+#fbicon{
+	position:absolute;
+	top:90px;
+	right:40px;
+	z-index:20;
+	width:70px;
+	display: none;
+}
 
 #mobile>a{display:none;}
 #mobile.float-scroll{

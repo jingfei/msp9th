@@ -84,9 +84,11 @@ $(document).ready( function() {
 		}
 		if(t>=NavTop){
 			$("#navigation").attr("class", "float-scroll");
+			$("#fbicon").fadeIn();
 		}
 		else{
 			$("#navigation").attr("class", "no-scroll");
+			$("#fbicon").fadeOut("fast");
 		}
 	});
 	$("#mobileMenu").on("click",function(){
