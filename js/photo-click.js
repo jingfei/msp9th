@@ -8,7 +8,7 @@ $(document).ready(function () {
 		if(group==1) group="美宣組";
 		else if(group==2) group="企劃組";
 		else if(group==3)group="技術組";
-        var school = $(this).find("span").html();
+        var school = $(this).siblings(".personschool").html();
         var name = $(this).find("h3").html();
         var skill = $(this).siblings(".personskill").html();
         var say = $(this).siblings(".personsay").html();
