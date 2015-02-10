@@ -23,11 +23,15 @@ $(document).ready(function () {
         $("#mask").fadeIn(200).css('display', 'table');
     });
     
-    $("#mask,#exit").on("click",function () {
+    $("#maskHelper,#exit").on("click",function () {
         $(document).unbind('scroll');
         $('body').css({'overflow' : 'visible'});
         
         $("#mask").fadeOut(200);
-    });
+    }).children().on("click",function(e){
+		console.log($(this).attr("id"));
+		if($(this).attr("id")!="exit")
+			return false;
+	});
 });
 

@@ -255,6 +255,8 @@ a:hover{color:#D5E42F;}
 }
 #mspdetail > #exit{
     cursor: pointer;
-	float: right;
-	margin:20px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 200;
 }
