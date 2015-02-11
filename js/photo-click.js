@@ -1,18 +1,20 @@
 $(document).ready(function () {
-    $(".person > article").click(function () {
+    $(".person").on("click",function () {
         $('body').css({'overflow' : 'hidden'});
+		var ScrollT=$(window).scrollTop();
+		var ScrollL=$(window).scrollLeft();
         $(document).bind('scroll', function () {
-            window.scrollTo(0, 0);
+            window.scrollTo(ScrollL, ScrollT);
         });
         var group = getGroup();
 		if(group==1) group="美宣組";
 		else if(group==2) group="企劃組";
 		else if(group==3)group="技術組";
-        var school = $(this).siblings(".personschool").html();
+        var school = $(this).find(".personschool").html();
         var name = $(this).find("h3").html();
-        var skill = $(this).siblings(".personskill").html();
-        var say = $(this).siblings(".personsay").html();
-        var img = $(this).siblings("img").attr("src");
+        var skill = $(this).find(".personskill").html();
+        var say = $(this).find(".personsay").html();
+        var img = $(this).find("img").attr("src");
         $("#mspgroup").html(group);
         $("#mspschool").html(school);
         $("#mspname").html(name);
@@ -24,14 +26,19 @@ $(document).ready(function () {
     });
     
     $("#maskHelper,#exit").on("click",function () {
-        $(document).unbind('scroll');
-        $('body').css({'overflow' : 'visible'});
-        
-        $("#mask").fadeOut(200);
+		ExitMask();
     }).children().on("click",function(e){
-		console.log($(this).attr("id"));
 		if($(this).attr("id")!="exit")
 			return false;
 	});
 });
 
+$(document).keyup(function(e){
+	if(e.keyCode==13 || e.keyCode==27) ExitMask(); //press enter || esc
+});
+
+function ExitMask(){
+	$(document).unbind('scroll');
+	$('body').css({'overflow' : 'visible'});
+	$("#mask").fadeOut(200);
+}

@@ -1,11 +1,14 @@
 html,body{
-	min-width: 1280px;
 	width: 100%;
 	background: #EEEFEF;
 	font-family: Microsoft JhengHei;
 	color: #0A232E;
 	margin: 0;
 	cursor: default;
+}
+html{
+	overflow-y: -moz-scrollbars-vertical;
+	overflow-y: scroll;
 }
 body{
 	height:100%;
@@ -31,10 +34,18 @@ a:hover{color:#D5E42F;}
 .float-scroll{
 	position: fixed;
 	top: 0;
+	background-color: rgba(0,157,230,0.8);
+	-webkit-transition:background-color 1s;
+    -moz-transition:background-color 1s;
+    transition:background-color 1s;
 }
 .no-scroll{
 	position: relative; 
 	top: 30px;
+	background-color: rgba(0,157,230,0.0);
+	-webkit-transition:background-color 0.5s;
+    -moz-transition:background-color 0.5s;
+    transition:background-color 0.5s;
 }
 #navigation>a{display:block;}
 #navigation #nav-ul{display:block;}
@@ -174,13 +185,11 @@ a:hover{color:#D5E42F;}
 
 #bg2{
 	position: absolute;
-	min-width: 1280px;
 	width: 100%;
 	z-index: 0;
 }
 #bg1{
 	position: absolute;
-	min-width: 1280px;
 	width:100%;
 	bottom: 100px;
 	left:0;
@@ -227,7 +236,7 @@ a:hover{color:#D5E42F;}
     background-color:#eeefef;
     z-index: 120;
     width: 950px;
-    height: 400px;
+    height: 430px;
 	position: relative;
 	top: -50%;
 	margin: 0 auto;
@@ -254,13 +263,20 @@ a:hover{color:#D5E42F;}
 	left: 45%;
 	height:100%;
 	padding: 50px;
-	width: 40%;
+	width: 45%;
 }
 
 #mspimage{
     width:55%;
+	border:1px solid #0A232E;
+	padding:5px;
+	background:rgba(10,35,46,0.8);
 }
 #mspschool,#mspskill,#mspsay{ font-size: 1.2em; }
+#mspsay{
+	overflow-y: auto;
+	height:250px;
+}
 #mspname{
 	font-size: 2em; 
 	margin-left: 45px;
