@@ -77,6 +77,7 @@ $(document).ready( function() {
 		else if(t+1>=INTRO){
 			$("#nav ul li").removeAttr("id");
 			$("#buttonI").parent().attr("id","active");
+			$("#navigation").css("background", "#009DE6");
 		}
 		else{
 			$("#nav ul li").removeAttr("id");
@@ -84,9 +85,12 @@ $(document).ready( function() {
 		}
 		if(t>=NavTop){
 			$("#navigation").attr("class", "float-scroll");
+			$("#fbicon").fadeIn();
 		}
 		else{
 			$("#navigation").attr("class", "no-scroll");
+			$("#fbicon").fadeOut("fast");
+			$("#navigation").css("background", "");
 		}
 	});
 	$("#mobileMenu").on("click",function(){
@@ -105,6 +109,7 @@ $(document).ready( function() {
 });
 
 $(window).load(function(){
+	$("#home").css("height",$(window).height()+"px");
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
 		navH=$("#main").offset().top+30;
