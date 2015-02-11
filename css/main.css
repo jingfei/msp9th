@@ -16,6 +16,8 @@ body>div:not(#loader){
 a{color: #009DE6; text-decoration: none;}
 a:hover{color:#D5E42F;}
 
+#main{position:absolute;top:0;}
+
 #loader{
 	height: 100%;
 	width: 100%;
@@ -39,7 +41,7 @@ a:hover{color:#D5E42F;}
 #navigation{ 
 	width: 100%; 
 	max-height: 100px; 
-	background: #009DE6; 
+//	background: #009DE6; 
 	z-index: 30; 
 	box-sizing: border-box;
 }
@@ -78,7 +80,7 @@ a:hover{color:#D5E42F;}
 	text-decoration: none;
 	font-size: 1.5em;
 	display: block;
-	color: #0A232E;
+	color: #fff;//#0A232E;
 	font-weight: 900;
 	padding: 4px 0 2px;
 	-webkit-transition: all 100ms linear;
@@ -177,8 +179,10 @@ a:hover{color:#D5E42F;}
 	z-index: 0;
 }
 #bg1{
-	position: relative;
+	position: absolute;
 	width:100%;
+	bottom: 100px;
+	left:0;
 }
 #bg3{
 	position: absolute;
