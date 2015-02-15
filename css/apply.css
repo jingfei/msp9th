@@ -21,20 +21,21 @@
 	background: rgba(10,35,46,0.9);
 	color: #EEEFEF;
 }
-#aBigTitle #resume{
+.LittleContent #resume{
 	height: 50px;
 	margin-bottom: 20px;
 }
-#aBigTitle #resume>span{
+.LittleContent #resume>span{
 	padding:10px 20px;
 	background:#0A232E;
 	border-radius: 20px;
 	font-size: 0.8em;
+	text-shadow: none;
 }
-#aBigTitle #resume a{
+.LittleContent #resume a{
 	color: white;
 }
-#aBigTitle #resume a:hover{
+.LittleContent #resume a:hover{
 	color: #D5E42F;
 }
 
