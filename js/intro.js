@@ -112,7 +112,7 @@ function ShowIntro(id, event){
 		$("#cT1").html("Project Management");
 		$("#cT2").html("Negotiation");
 		$("#cT3").html("Brand Packaging");
-		$("#cT4").html("Panning and Writing");
+		$("#cT4").html("Planning and Writing");
 		$('.first').circleProgress({
 			value: 0.85,
 			size: 150.0,
