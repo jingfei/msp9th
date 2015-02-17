@@ -275,7 +275,7 @@ a:hover{color:#D5E42F;}
 #mspschool,#mspskill,#mspsay{ font-size: 1.2em; }
 #mspsay{
 	overflow-y: auto;
-	height:250px;
+	height:230px;
 }
 #mspname{
 	font-size: 2em; 
