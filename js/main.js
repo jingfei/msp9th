@@ -1,5 +1,5 @@
 var navH, bg1Top;
-var isPlay = !document.createElement('video').canPlayType;
+var isPlay = !!document.createElement('video').canPlayType;
 $(document).ready( function() {
 	$("#buttonCircle").on('click',function(e) {
 		e.stopPropagation();
