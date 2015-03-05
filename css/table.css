@@ -1,0 +1,14 @@
+.tableform{
+	border:1px #0A232E solid;
+	padding: 15px;
+	background-color: rgb(255, 255, 255,1.0);
+	text-align:center;
+}
+.tableheader{
+	background-color:#0A232E;
+	border:0px;
+	color:#FFFFFF;
+}
+.tablemarked{
+	background-color: rgba(0,157,230,0.4);
+}
