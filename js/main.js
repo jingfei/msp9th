@@ -85,10 +85,14 @@ $(document).ready( function() {
 		if(t>=NavTop){
 			$("#navigation").attr("class", "float-scroll");
 			$("#fbicon").fadeIn();
+			$("#mspStar").fadeIn();
+			$("#home video").get(0).pause();
 		}
 		else{
 			$("#navigation").attr("class", "no-scroll");
 			$("#fbicon").fadeOut("fast");
+			$("#mspStar").fadeOut("fast");
+			$("#home video").get(0).play();
 		}
 	});
 	$("#mobileMenu").on("click",function(){
@@ -107,7 +111,7 @@ $(document).ready( function() {
 });
 
 $(window).load(function(){
-	$("#home").css("height",$(window).height()+"px");
+	$("#home").css("height", ($(window).height()-70)+"px");
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
 		navH=$("#navigation").height();

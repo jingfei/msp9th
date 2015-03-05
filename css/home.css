@@ -1,14 +1,14 @@
 #home{
 	position: relative;
 //	top: 100px;
-	text-align: center;
+	text-align: right;
 	cursor: default;
 	z-index: 15;
 //	margin: 45px 0;
 //	height: 100%;
 	color: white;
 	width: 100%;
-	padding-top: 280px;
+	padding-top: 365px;
 }
 img.circle{
 	padding: 0 10px;

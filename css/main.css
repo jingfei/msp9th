@@ -62,6 +62,7 @@ a:hover{color:#D5E42F;}
 	left:100px;
 	z-index:20;
 	height:140px;
+	display: none;
 }
 #navigation #mobileText, #navigation #mobileMenu{display:none;}
 #navigation-wrap { 
