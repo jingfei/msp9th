@@ -1,4 +1,5 @@
-var navH;
+var navH, bg1Top;
+var isPlay = !document.createElement('video').canPlayType;
 $(document).ready( function() {
 	$("#buttonCircle").on('click',function(e) {
 		e.stopPropagation();
@@ -85,14 +86,18 @@ $(document).ready( function() {
 		if(t>=NavTop){
 			$("#navigation").attr("class", "float-scroll");
 			$("#fbicon").fadeIn();
-			$("#mspStar").fadeIn();
-			$("#home video").get(0).pause();
+			if(isPlay) $("#mspStar").fadeIn();
 		}
 		else{
 			$("#navigation").attr("class", "no-scroll");
 			$("#fbicon").fadeOut("fast");
-			$("#mspStar").fadeOut("fast");
-			$("#home video").get(0).play();
+			if(isPlay) $("#mspStar").fadeOut("fast");
+		}
+		if(isPlay){
+			if(t>=bg1Top)
+				$("#BigVideo").get(0).pause();
+			else
+				$("#BigVideo").get(0).play();
 		}
 	});
 	$("#mobileMenu").on("click",function(){
@@ -111,11 +116,28 @@ $(document).ready( function() {
 });
 
 $(window).load(function(){
-	$("#home").css("height", ($(window).height()-70)+"px");
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
+		var homeH=0, bg1H=$("#bg1").height();
+		if(!isPlay){
+			$("#BigVideo").hide();
+			$("#BigVideo").get(0).pause();
+			$("#homeBack").hide();
+			homeH=$("#BigIMG").height();
+			$("#mspStar").show();
+		}
+		else{
+			$("#BigIMG").hide();
+			homeH=$("#BigVideo").height();
+		}
+		/* change home css height */
+		$("#home").css("height", (bg1H/2 + homeH)+"px");
+		$("#homeBack").css("height", homeH+"px");
+		$("#bg1").css("top", (homeH - bg1H/2)+"px");
+		$("#homeText").css("top", (homeH/2 - $("#homeText").height())+"px");
+		/**************************/
 		navH=$("#navigation").height();
-		$("#home video").get(0).play();
+		bg1Top=$("#bg1").offset().top;
 	});
 });
 

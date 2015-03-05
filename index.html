@@ -25,6 +25,7 @@
 	<script src="js/loader.js" defer="defer"></script>
     <script src="js/photo-click.js" defer="defer"></script>
 	<script src="js/qa-motion.js" defer="defer"></script>
+	<script src="js/buttons.js" defer="defer"></script>
 	<link rel='stylesheet' type='text/css' href='css/table.css' />
 	<link rel='stylesheet' type='text/css' href='css/buttons.css' />
 </head>
@@ -68,15 +69,17 @@
 	</div>
     <div id="main">
 		<div id="home">
-	<!--		<img src="img/bg.jpg" style="height:100%;width:100%;position:absolute;bottom:260px;left:0;z-index:-1;"/>  -->
-			<video style="width:100%;position:absolute;top:0;left:0;z-index:-1;" autoplay loop>
+			<img src="img/bg.jpg" id="BigIMG" style="width:100%;position:absolute;top:0;left:0;z-index:-1;"/>
+			<video id="BigVideo" style="width:100%;position:absolute;top:0;left:0;z-index:-1;" autoplay loop>
   				<source src="img/MSP.mp4" type="video/mp4">
 			</video>
-			<span style="height:100%;width:100%;position:absolute;bottom:260px;left:0;z-index:-1;background: rgba(0,0,0,0.5);"></span>
+			<span id="homeBack" style="width:100%;position:absolute;top:0;left:0;z-index:-1;background: rgba(0,0,0,0.5);"></span>
 			<img id="bg1" src="img/background_home.png" />
-			<div style="padding-right:120px"><span id="MTitle">MICROSOFT STUDENT PARTNERS</span></div>
-			<div style="padding-right:120px" id="p0" class="gates">
-				微軟學生大使&nbsp;&nbsp;&nbsp;歡迎您的加入
+			<div id="homeText" style="padding-right:120px;position:relative;">
+				<div id="MTitle"><span>MICROSOFT STUDENT PARTNERS</span></div>
+				<div class="gates">
+					<span>微軟學生大使&nbsp;&nbsp;&nbsp;歡迎您的加入</span>
+				</div>
 			</div>
 		</div>
 		<img id="bg2" src="img/background_2.png" />
@@ -146,13 +149,7 @@
 			</div>
 			<div id="introFilm">
 				<div id="FilmTitle"><span><span>招生介紹影片</span></span></div>
-				<div style="margin:70px;height:480px;">
-<!--
-						<video width="853" height="480" controls>
-  							<source src="img/msp.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
--->
+				<div style="margin:70px 0 100px 0;height:480px;">
 					<iframe width="853" height="480" src="https://www.youtube.com/embed/CXxp8fHJDak" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
@@ -1058,18 +1055,4 @@
         </div></div>
     </div>
 </body>
-	<script src="js/jquery-1.9.1.js" defer="defer"></script>
-	<script src="js/jquery-ui.js" defer="defer"></script>
-	<script src="js/jquery-hover-effect.js" defer="defer"></script>
-	<script src="js/circle-progress.js" defer="defer"></script>
-	<script src="js/main.js" defer="defer"></script>
-	<script src="js/home.js" defer="defer"></script>
-	<script src="js/intro.js" defer="defer"></script>
-	<script src="js/group.js" defer="defer"></script>
-	<script src="js/spin.min.js" defer="defer"></script>
-	<script src="js/loader.js" defer="defer"></script>
-    <script src="js/photo-click.js" defer="defer"></script>
-	<script src="js/qa-motion.js" defer="defer"></script>
-	<script src="js/buttons.js" defer="defer"></script>
-
 </html>

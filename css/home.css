@@ -1,32 +1,30 @@
 #home{
 	position: relative;
-//	top: 100px;
 	text-align: right;
 	cursor: default;
 	z-index: 15;
-//	margin: 45px 0;
-//	height: 100%;
 	color: white;
 	width: 100%;
-	padding-top: 365px;
 }
-img.circle{
-	padding: 0 10px;
-	width: 12px;
-}
-#MTitle{
-	padding: 0px 3px;
-	border: 4px solid #fff; //#0A232E;
-	font-size: 2.5em;
+
+#homeText{
 	font-weight: 900;
 }
-#MTitle:hover{
+#homeText>div>span{
+	background: rgba(0,0,0,0.2);
+	padding: 3px 8px;
+}
+#homeText>div>span:hover{
 	color: #009DE6;
-	border: 5px solid #009DE6;
 	cursor: default;
 }
+
+#MTitle{
+	font-size: 2.5em;
+}
+
 .gates{
 	font-size:2em;
-	padding:70px 0;
+	padding: 30px 0;
 	font-weight:700;
 }
