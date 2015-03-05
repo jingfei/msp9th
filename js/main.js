@@ -115,6 +115,7 @@ $(window).load(function(){
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
 		navH=$("#navigation").height();
+		$("#home video").get(0).play();
 	});
 });
 
