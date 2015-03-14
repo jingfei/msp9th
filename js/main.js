@@ -118,31 +118,37 @@ $(document).ready( function() {
 
 });
 
-$("#BigIMG").load(function(){
-	$("#loader").slideUp("slow",function(){
-		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
-		var homeH=0, bg1H=$("#bg1").height();
-		var Video = document.getElementById("BigVideo");
-		if(Video.readyState != 4 || !isPlay){
-			isPlay=false;
-			$("#BigVideo").hide();
-			$("#BigVideo").get(0).pause();
-			$("#homeBack").hide();
-			homeH=$("#BigIMG").height();
-			$("#mspStar").show();
-		}
-		else{
-			$("#BigIMG").hide();
-			homeH=$("#BigVideo").height();
-		}
-		/* change home css height */
-		$("#home").css("height", (bg1H/2 + homeH)+"px");
-		$("#homeBack").css("height", homeH+"px");
-		$("#bg1").css("top", (homeH - bg1H/2)+"px");
-		$("#homeText").css("top", (homeH/2 - $("#homeText").height())+"px");
-		/**************************/
-		navH=$("#navigation").height();
-		bg1Top=$("#bg1").offset().top;
-	});
+var $homeImg = $("#home img");
+var homeCountImg=0;
+
+$homeImg.load(function(){
+	homeCountImg++;
+	if(homeCountImg==$homeImg.length){
+		$("#loader").slideUp("slow",function(){
+			$("body>div:not(#loader):not(#mask)").fadeIn(2000);
+			var homeH=0, bg1H=$("#bg1").height();
+			var Video = document.getElementById("BigVideo");
+			if(Video.readyState != 4 || !isPlay){
+				isPlay=false;
+				$("#BigVideo").hide();
+				$("#BigVideo").get(0).pause();
+				$("#homeBack").hide();
+				homeH=$("#BigIMG").height();
+				$("#mspStar").show();
+			}
+			else{
+				$("#BigIMG").hide();
+				homeH=$("#BigVideo").height();
+			}
+			/* change home css height */
+			$("#home").css("height", (bg1H/2 + homeH)+"px");
+			$("#homeBack").css("height", homeH+"px");
+			$("#bg1").css("top", (homeH - bg1H/2)+"px");
+			$("#homeText").css("top", (homeH/2 - $("#homeText").height())+"px");
+			/**************************/
+			navH=$("#navigation").height();
+			bg1Top=$("#bg1").offset().top;
+		});
+	}
 });
 
