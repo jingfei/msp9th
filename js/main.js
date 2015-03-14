@@ -116,9 +116,6 @@ $(document).ready( function() {
 		$("#nav-ul").append('<li><a href="https://www.facebook.com/MSPTaiwan" target="_blank">粉絲專頁</a></li>');
 	}
 
-});
-
-$("#BigIMG").load(function(){
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
 		var homeH=0, bg1H=$("#bg1").height();
