@@ -122,7 +122,9 @@ $("#gM1 img").load(function(){
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
 		var homeH=0, bg1H=$("#bg1").height();
-		if(!isPlay){
+		var Video = document.getElementById("BigVideo");
+		if(Video.readyState != 4 || !isPlay){
+			isPlay=false;
 			$("#BigVideo").hide();
 			$("#BigVideo").get(0).pause();
 			$("#homeBack").hide();
