@@ -133,6 +133,7 @@ $("#BigIMG").load(function(){
 		}
 		else{
 			$("#BigIMG").hide();
+			$("#BigVideo").get(0).play();
 			homeH=$("#BigVideo").height();
 		}
 		/* change home css height */
