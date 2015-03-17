@@ -90,11 +90,13 @@ $(document).ready( function() {
 			$("#navigation").attr("class", "float-scroll");
 			$("#fbicon").fadeIn();
 			if(isPlay) $("#mspStar").fadeIn();
+			$("#videoIcon").fadeOut();
 		}
 		else{
 			$("#navigation").attr("class", "no-scroll");
 			$("#fbicon").fadeOut("fast");
 			if(isPlay) $("#mspStar").fadeOut("fast");
+			$("#videoIcon").fadeIn();
 		}
 		if(isPlay){
 			if(t>=bg1Top)
@@ -116,6 +118,11 @@ $(document).ready( function() {
 		$("#nav-ul").append('<li><a href="https://www.facebook.com/MSPTaiwan" target="_blank">粉絲專頁</a></li>');
 	}
 
+	$("#videoIcon img").hover(function(){$("#videoIcon>span").toggle("slide");},
+						  function(){$("#videoIcon>span").hide("slow");});
+});
+
+$("#BigIMG").load(function(){
 	$("#loader").slideUp("slow",function(){
 		$("body>div:not(#loader):not(#mask)").fadeIn(2000);
 		var homeH=0, bg1H=$("#bg1").height();
@@ -130,7 +137,6 @@ $(document).ready( function() {
 		}
 		else{
 			$("#BigIMG").hide();
-			$("#BigVideo").get(0).play();
 			homeH=$("#BigVideo").height();
 		}
 		/* change home css height */
